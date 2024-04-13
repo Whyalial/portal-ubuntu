@@ -1,0 +1,245 @@
+html{
+    color: #fff;  /*mudando a cor de todo o site*/
+    /*scroll-behavior: smooth; Quando apertar botão de rolagem, vai ser suave*/
+}
+
+body{
+    font-family: 'Titulos', sans-serif; 
+    margin: 0 auto; /*Espaçamento e o auto é pra ajustar certinho*/
+    max-width: 1120px; /*Largura máxima do body, px é pixel*/
+    background: linear-gradient(150deg, #072917,#064E32,#00A25B );
+}
+
+.cabecalho{ /*o . é pra dizer que é uma class, nesse caso é "eu quero estilizar essa parte de cabeçalho*/
+    /*background-color: blue; Importante deixar pq sabe onde tá mexendo e só tirar no final*/
+    display: flex; /*O flex É pra deixar um elemento do lado do outro*/
+    justify-content: space-between; /*Esse comando serve pra mudar de lugar as coisas,como uma sugestão, nesse caso usando o space between, mas pode escolher qualquer outro de acordo com a necessidade*/
+    align-items: center; /*Isso faz com que os elementos alinhem */
+    padding: 20px 80px; /*Serve pra mexer o espaçamento interno,testa aí que tu vai ver onde*/
+}
+
+.cabecalho .logo{ /*Selecionando especificamente, o . é pra indicar qual class*/
+    font-size: 30px;
+    width: px; /*largura*/
+    height: 35px; /*altura*/
+    /*border-radius: 50%; caso quisesse fazer um circulo, especificamente uma borda
+    border: 2px solid #fff; a borda do circulo
+    text-ddecoration: underline; para decorar
+    text-align: center; centralizar o texto
+    line-height: 10px; ajustar ainda mais a centralização
+    
+    font-family: 'Titulo', sans-serif; caso precise ajustar a fonte*/
+    transition: 0.4s; /*suavizando a mudança de cor*/
+}
+
+/*.cabecalho a:hover .logo{ aqui é pra quando o usuário passar o mouse em cima da logo*/
+    /*color: beige;
+    border: 2px solid (#numerodacor); caso tenha borda
+}*/
+
+.cabecalho .menu ul{ /*Fundo das opçoes do menu*/
+    border-radius: 50px;
+}
+
+.cabecalho .menu li a{
+    font-size: 19px; /*Tamanho da fonte*/
+    text-transform: capitalize; /*AQUI É PRA DEIXAR O TEXTO COM MAIÚSCULA A CADA PALAVRA, SE USASSE UPPERCASE, ficaria tudo em capslock*/
+    padding: 17px 13px;
+
+    transition: 0.3s;
+}
+
+.cabecalho .menu li a:hover { /*Aqui não tá eespecificando, pq vai servir pras outras abas tbm*/
+    background-color: #082219;
+    color: beige;
+    border-radius: 50px;
+
+}
+
+.home{/*Espaçamento de cada parte da área home, principalmente cabeçalho*/
+    display: flex;
+    min-height: calc(109vh - 125px); /*Isso aqui é a altura da janela, o calc é pra calcular tudo certinho e não acontecer de ficar muito próximo ou muito longe. 125px é a altura do menu*/
+    align-items: center; /*Alinhar os itens pra ficarem centralizados*/
+    gap: 20px; /*Definir uma separação fixa entre os elementos*/
+    justify-content: space-between;
+}
+
+.home .informacoesiniciais{ /*Mexendo no primeiro paragráfo*/
+    display: flex; /*pra que fique certinho e adicione a tag flex*/
+    flex-direction: column; /*pra que o texto e tudo fique em colunas*/
+    gap: 15px; /*Tag para separar os elementos */
+    letter-spacing: 2px; /*Espaço entre as letras*/
+    padding: 0 70px; /*Espaçamento das letras com as bordas das margens*/
+    max-width: 50%; /*É a ocupação do espaço referente a largura. Quando tem imagem, é 50% e quando não tem, usa 100%, importante pra não quebrar*/
+}
+
+.home .informacoesiniciais h1{ /*Estilizar o titulo*/
+    /*Aqui teoricamente era pra ter um font family, mas por algum motivo bugou ent preferi deixar sem*/
+    font-size: 25px; /*Tamanho da fonte*/
+    margin-bottom: 20px; /*Espaçamento dela entre o outro texto, o bottom é pra dizer em qual direção*/
+    letter-spacing: 2px;
+}
+
+.home .informacoesiniciais p{ /*Estilizar os paragráfos*/
+    font-family: Textos grandes;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.home .redes-sociais{
+    display: flex; /*Deixar um do lado do outro*/
+    gap: 20px; /*Distancia de espaçamento entre eles*/
+    margin-top: 15px; /*Distancia de cima entre as redes e o texto*/
+}
+
+.home .redes-sociais a i{ /*Estilizar os icons*/
+    border: 1px solid #fff; /*Colocando uma borda*/
+    border-radius: 50%; /*arredondar*/
+    width: 50px; /*Largura da borda*/
+    height: 50px; /*Altura da borda*/
+    padding: 14px; /*Distancia interior de altura e largura*/
+    text-align: center; /*Alinhar o icon no centro*/
+    font-size: 24px; /*Tamanho do icon*/
+    transition: 0.3s;
+}
+
+.home .redes-sociais a i:hover{ /*Animações quando passar o mouse*/
+    color: #EBD7A4; /*Mudar a cor do icon*/
+    border: 1px solid #EBD7A4; /*Mudar a cor da borda*/
+    transform: scale(1.1); /*ANIMAÇÃO MTO LEGAL DE SUBIR A ESCALA*/
+}
+
+/* Caso queira que tenha fundo, se a imagem não for png, usa essa linha de código, nesse caso não vai usar devido a logo ser png.
+.home .container-foto .foto{ 
+    background-color: darkviolet;
+    max-width: 450px; /*Máximo de largura*/
+    /*border-radius: 50%; Borda redonda
+}*/
+
+.home .container-foto img{ 
+    height: auto;
+    width: 90%; /*Largura*/
+    /*border-radius; Deixar redondo*/
+}
+
+/* Caso tenha fundo da imagem, pra ele ficar com fundo bonito, gradiente, temos o seguinte código:
+.home .foto.sombra-interna{ 
+    widgth: 100%;
+    border-radius: 50%;
+    background-color: linear-gradient (to right, #numerodacor,#numerodacor); 
+    max-width: 450px; /*
+}*/
+
+.acesse{ /*Estilizar o fundo dos acessos*/
+
+    padding: 70px 0 70px; /*espaçamento interno, o primeiro 70px é em cima ( a altura) e o segundo 70px é em baixo e o 0 é dos lados*/
+}
+
+.acesse .titulo{ /*Estilizar o titulo dos acessos*/
+    text-align: center; /*Colocar o texto no centro*/
+    padding: 60px 0; /*Mais espaçamento*/
+    font-size: 36px; /*Aumentando tamanho da fonte*/
+    /*font-weight: espessura da fonte parece
+    text-transform: uppercase; Caso quiser deixar em caps lock */
+}
+
+.acesse .container-acesso{
+
+    display: flex; /*Projetos um do lado do outro*/
+    gap: 20px; /*Espaçamento entre os acessos*/ 
+    flex-wrap: wrap; /*Deixar um do lado do outro*/ 
+    margin-bottom: 20px; /*Espaçamento da margem*/
+    justify-content: center; /*Colocar no centro*/  
+}
+
+.acesse .acesso{ 
+    max-width: 260px; /*Largura máxima*/ 
+    max-height: 500px; /*Altura mámixa*/ 
+    position: relative; /*O elemento vai no elemento pai, na div do projeto*/
+    display: none;  /*Some os acessos, a partir daqui vamos mexer qual está ativo e qual está no mostrar mais*/ 
+}
+
+.acesse .acesso.ativo{ /*Quando se tem duas classes, coloca o ponto. Aqui, vamos mexer para que os projetos ativos aparecam antes do mostrar mais*/ 
+    display: block; /*Pra aparecer os projetos ATIVOS*/ 
+}
+
+.acesse .acesso img{
+    height: 90%; /*Ocupar 80% da altura, mesmo que a imagem seja menor*/ 
+    
+}
+
+.acesse .acesso h3{ /*Mexendo no título dos projetos*/
+    background-color: #082219;
+    width: 91%;
+    padding-left: 0px;
+    padding-bottom: 10px; /*Espaço pra baixo*/
+    padding-top: 7px; /*Espaço pra cima*/
+    text-align: center;
+    position: absolute; /*Conseguir mexer na posição dele mais facilmente, usando o absolute é como se fosse uma folha em cima da outra, tem que ter o relative na div principal, nesse caso é na linha 160 desse código.*/ 
+    bottom: 0;/*Tem como  colocar em baixo tbm, testa aí: bottom: 0;*/
+    
+}
+
+.acesse .acesso .informacoes-acesso{ /*Colocando o efeito de folha em cima de folha*/
+    background-color: #082219;
+    position: absolute;
+    top: 0; /*Pra ficar no topo*/
+    width: 91%; /*Ajustando o tamanho conforme a imagem, coisa que fez lá em cima na linha 169*/
+    height: 91%; 
+    font-size: 14px; /*Tam da fonte*/
+    opacity: 0; /*Pra sumir a opacidade*/
+    transition: 0.4s; /*Animação*/
+    padding: 15px; /*distãncia da borda*/
+    word-spacing: 2px; /*espaçamento entre palavras*/
+
+}
+
+.acesse .container-acesso .acesso:hover .informacoes-acesso{ /*Animação quando passar o mouse em cima das foros dos acessos*/
+    opacity: 0.7; /*Subir a opacidade zerada na anterior*/
+    background-color: #082219; /*A cor que vai aparecer ao selecionar*/
+}
+
+.acesse .btn-mostrar-acessos{
+    background: none;
+    border: 1px solid white; /*ADICIONANDO BORDA*/
+    border-radius: 15px;
+    color: white;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 33px;
+    margin: 0 auto; /*Sair do canto, ir ficar justo no centro*/
+    display: flex;
+    align-items: center;
+    cursor: pointer; /*Mudar o mouse, sair da setinha para mão*/
+    opacity: 0.7;
+}
+
+.acesse .btn-mostrar-acessos:hover { /*Animação no botão*/
+    background-color: darkgreen;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.acesse .btn-mostrar-acessos.remover{ /*sumir o botão quando apertar*/
+    display: none;
+}
+
+@keyframes gradient-animation{ /*Animação de fundo gradiente*/
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+    /*Usa pra por na sombra interna da foto de perfil do site, adicionando o comando lá em cima nessa parte de sombra (linha 125), com o comando :
+    background-size: 180% 180%;
+    animation: gradient-animatioon 5s ease infinite;*/
+}

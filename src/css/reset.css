@@ -1,0 +1,22 @@
+/*Usando os seletores*/
+
+*{
+    margin: 0; /*Resetando a margem toda, o espaçamento externo*/
+    padding: 0; /*Padding é o espaçamento interno*/
+    border: none; /*Nenhuma borda*/
+    outline: 0; /*Só reseta tbm*/
+    box-sizing: border-box; /*Ao resetar, ajuda a trabalhar com o espaçamento*/
+}
+
+a{
+    text-decoration: none; /*Tirar a decoaração dos nome, tipo o subilinhado*/
+    color: #fff; /*fff é a cor branca, código de cor */
+}
+
+ul{
+    list-style: none; /*Tirar os traços ou pontos quando se começa uma lista,lembra? ul é uma tag de lista*/
+}
+
+img{
+    max-width: 100%; /*lARGURA DAS IMAGENS*/
+}

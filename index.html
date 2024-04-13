@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--O link é pra importar bibliotecas externas, nesse caso foram usadas para  os icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"/>
+
+    <title>Portal Ubuntu </title> <!--Nome em exibição na barra do navegador-->
+
+    <!--o style vai ser a linha de código para mudar as fontes do site-->
+    <style>
+        @font-face {
+            font-family: Títulos; 
+            src: url('src/css/Titulo/MADE\ Sunflower\ PERSONAL\ USE.otf')format('opentype');
+            font-weight: normal; /* Configurações adicionais*/
+            font-style: normal; /* Configurações adicionais*/
+
+            /*Na url, colocamos o nome da fonte, no format é o formato do arquivo que ela é (Se vê nas propriedades)
+                TIPOS DE FORMATOS: 
+                 opentype (.otf)
+                 truetype (.ttf)
+                 embedded-opentype
+                 truetype-aap (apple advanced typhography)
+
+            */
+        }
+
+        @font-face {
+            font-family: Textos grandes; 
+            src: url('src/css/Textos grandes/Lato-Regular.ttf')
+            format('truetype');
+            font-weight: normal; 
+            font-style: normal; 
+
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Títulos', Times, serif;
+            font-size: 2em; /* Tamanho da fonte */
+        }
+
+        p {
+            font-family: 'Textos grandes', Times, serif;
+            font-size: 1.2em; /* Tamanho da fonte */
+        }
+    </style>
+
+    <link rel="stylesheet" href="src/css/reset.css"> <!--Isso aqui foi pra resetar toda estrutura automática, mas claro, TEM QUE CRIAR A PASTA RESET.CSS ANTES-->
+    <link rel="stylesheet" href="src/css/estilos.css"> <!--Adicionando a pasta de estilizar dentro do html-->
+    <link rel="stylesheet" href="./src/css/responsivo.css"> <!--Adicionando a pasta de deixar a resolução em todos os dispositivos, dentro do html-->
+    
+</head>
+
+<body>
+    <header class="cabecalho"> <!--Cabeçalho-->
+            <h1 class="logo">Portal Ubuntu</h1> <!-- Logo -->
+        </a>
+
+        <nav class="menu"> <!--Aqui é a barrinha que fica lá em cima com sessões pro usuário clicar-->
+            <ul> <!--Lista de itens para acesso-->
+                <li> <!-- Botão pra ir direcionar o usuário sobre os projetos do site -->
+                    <a href="#acesse"> Acesse</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="home">
+    <!--Primeira parte que o usuário vai ver ao entrar no site-->
+        <div class="informacoesiniciais"> 
+            <h1> <!--Título-->
+                Olá, que bom ver ver você no nosso Portal Ubuntu!
+            </h1>
+
+            <p> <!--Sub titulos ou textos-->
+                Aqui, você irá conseguir ter acesso a diversas informações sobre nosso IFBA - Campus Irecê!📚
+            </p> 
+            <p> 
+                Explore nossa página e qualquer dúvida, entre em contato conosco!
+            </p> 
+            
+            <ul class="redes-sociais"> <!--Lista de redes sociais em qualquer ordem-->
+                <li> <!--INSTAGRAM-->
+                    <a href="https://www.instagram.com/ubuntu.ifba/" title = "Nosso Instagram!" target = "_blank"> <!--O blank serve pra abrir uma nova aba ao clicar-->
+                        <i class="fab fa-instagram"> </i> <!--Tag i, para icon, a class pode ter mais de um elemento-->
+                    </a> 
+                </li>
+                
+                <li> <!--WHATSAPP-->
+                    <a href="https://wa.me/message/GDPABFHQ2LCBF1" title = "Nosso WhatsApp!" target="_blank" > <!--Essa linha é onde funciona os icons, para direcionar a outro lugar-->
+                        <i class="fab fa-whatsapp"> </i> <!--O i é a tag que puxa o icon que importamos lá em cima nos links-->
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="container-foto"> <!--Tag para adicionar foto no site-->
+            <div class="foto sombra-interna">
+                <img src="./src/css/imagens/logoubuntu.png" alt="Logo da Ubuntu"> <!--Aqui o src é pra selecionar a foto, adicionadas nos arquivos src em imagens; e o alt é o texto da foto-->
+            </div>
+        </div>
+
+    </section>
+
+    <section class="acesse" id="acesse"> <!--Algumas sugestões de acesso a informação-->
+        <h2 class="titulo" style="font-family: 'Titulo'">Você pode acessar: </h2>
+
+        <!--Container serve para dizer que vamos agrupar elementos dentro-->
+        <div class="container-acesso"> 
+            <div class="acesso ativo"> <!--Os projetos ativos são aqueles que estão fora do mostrar mais-->
+                <a href="https://www.instagram.com/ubuntu.ifba/" target="_blank"> <!--Futuramente,substituir isso pela parte de quem somos-->
+                    <img src="./src/css/imagens/Quemsomos.png" alt="Quem Somos"> <!--Foto em exibição pra essa sessão-->
+                    <h3 style="font-family: 'Titulos';">Quem somos?</h3> <!---->
+
+                    <div class="informacoes-acesso">
+                        <p>Conheça os membros que compõe a gestão estudantil 2024, seus cargos e tudo mais!</p>
+                        <p>🔗 Conhecer os membros</p>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="acesso ativo">
+                <a href="https://www.instagram.com/p/C2lGKa-OI8s/" target="_blank"> 
+                    <img src="./src/css/imagens/Ubuntour.png" alt="UbunTour">
+                    <h3 style="font-family: 'Titulos';">UbunTour!</h3>
+
+                    <div class="informacoes-acesso">
+                        <p>A UbunTour é uma proposta da diretoria de imprensa e divulgação para auxíliar o processo de adaptação dos novos estudantes do IFBA - Campus Irecê</p>
+                        <p>🔗 Saber mais sobre a Ubuntour</p>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="acesso ativo">
+                <a href="https://www.instagram.com/p/C28ts20MrMs/" target="_blank"> 
+                    <img src="./src/css/imagens/FalaIF.png" alt="FalaIF">
+                    <h3 style="font-family: 'Titulos';">FalaIF!</h3>
+
+                    <div class="informacoes-acesso">
+                        <p>FalaIF é o maior portal de acesso sobre tudo que acontece na nossa Instituição, como projetos, olímpiadas, e tudo mais!</p>
+                        <p>🔗 Saber mais sobre o FalaIF</p>
+                    </div>
+                </a>
+                
+            </div>
+
+            
+            <div class="acesso ativo">
+                <a href="https://www.instagram.com/stories/highlights/18073425577483833/" target="_blank"> 
+                    <img src="./src/css/imagens/SEBO.png" alt="SEBO">
+                    <h3 style="font-family: 'Titulos';">SEBO</h3>
+
+                    <div class="informacoes-acesso">
+                        <p>O SEBO consiste na venda de livros usados por um preço acessível, visando promover o incentivo á leitura e diversão dos fanáticos pela literatura! </p>
+                        <p>🔗 Acessar o catálogo! </p>
+                    </div>
+                </a>
+                
+            </div>
+
+    <!--A partir daqui, se quiser que apareça no mostrar mais, a primeira div class não vai ter ativo no nome, somente o class = acesso/projeto-->
+
+            <div class="acesso">
+                <a href="https://drive.google.com/file/d/1I3ytkraF-Mee6lN4VE_Tikd5dlWqRBhw/view?usp=sharing" target="_blank"> 
+                    <img src="./src/css/imagens/Planodegestao.png" alt="Plano de gestão">
+                    <h3 style="font-family: 'Titulos';">Plano de gestão</h3>
+
+                    <div class="informacoes-acesso">
+                        <p>Tenha acesso a todas as propostas de cada diretorias do nosso grêmio, onde estão disponíveis em forma de documento. É de suma importância a transparência pois visamos comprometimento com toda comunidade!</p>
+                        
+                        <p>🔗 Acessar as propostas! </p>
+                    </div>
+                </a>
+                
+            </div>
+
+            
+
+        </div>
+
+        <button class="btn-mostrar-acessos"> Mostrar mais</button> <!--Aparecer botão para mostrar mais projetos-->
+
+        
+    </section>
+
+    <script src="./src/js/index.js"></script>
+
+</body>
+
+</html>
