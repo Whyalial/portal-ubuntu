@@ -1,6 +1,6 @@
 html{
     color: #fff;  /*mudando a cor de todo o site*/
-    /*scroll-behavior: smooth; Quando apertar botão de rolagem, vai ser suave*/
+    scroll-behavior: smooth;/* Quando apertar botão de rolagem, vai ser suave*/
 }
 
 body{
